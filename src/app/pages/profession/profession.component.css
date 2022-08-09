@@ -1,0 +1,256 @@
+@font-face {
+    font-family: p-font;
+    src: url('../../../assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf');
+}
+@font-face {
+    font-family: head1-font;
+    src: url("../../../assets/fonts/PTSans-Bold.ttf");
+}
+@font-face {
+    font-family: head4-font;
+    src: url("../../../assets/fonts/NunitoSans-BoldItalic.ttf");
+}
+@font-face {
+    font-family: head3-font;
+    src: url("../../../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+.row1{
+    background-color: #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/* ------ FIRST HEADING ------ */
+.eleven h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1em;
+    padding-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #111;
+    padding-top: 30px;
+}
+
+.eleven h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+    height: 1px;
+    content: "";
+    background-color: #777;
+    z-index: 4;
+}
+
+.eleven h1:after {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0px;
+    content: '\00a7';
+    font-size: 30px;
+    line-height: 40px;
+    color: #c50000;
+    font-weight: 400;
+    z-index: 5;
+    display: block;
+    background-color: white;
+}
+
+.e1 h1:after {
+    background-color: #f8f8f8;
+}
+
+.row1-2{padding: 20px 50px;}
+
+/* --------- SEC 1 - PART 1 ------- */
+.r-part2{
+    padding: 35px 35px 20px;
+    font-weight: 500;
+    background-color: rgb(194, 232, 243);
+    letter-spacing: 0.7px;
+    word-spacing: 1px;
+}
+.r-part2 h1,
+.r-part2 h2,
+.r-part2 h3{
+    font-family: head1-font;
+    color: #333;
+}
+.r-part2 p{
+    font-family: p-font;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+.r-part2 h4{
+    font-family: head4-font;
+    text-indent: 70px;
+    text-align: justify;
+    font-weight: 600;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.r-part2 h2{
+    font-size: 16px;
+}
+.education div{
+    line-height: 22px;
+    word-spacing: 1.2px;
+    color: #333;
+    font-size: 13px;
+}
+.education div i{
+    color: #555;
+}
+.education div span{
+    display: inline-block;
+    font-weight: 650;
+}
+.front-skills{
+    word-break: break-all;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.r-part2 h3{
+    font-family: head3-font;
+}
+.front-skills span{
+    display: inline-block;
+    font-family: head3-font;
+    padding: 10px 15px;
+    margin: 0 7px;
+    letter-spacing: 1px;
+    color: white;
+}
+.crimson{background-color: crimson;}
+.blue{background-color: blue;}
+.red{background-color: #FF0000;}
+.oranged{background-color: orangered;}
+.blue2{background-color: #005ab3;}
+.purple2{background-color: #e600e6;}
+.purple3{background-color: #4d009a;}
+.green{background-color: #4d9a00;}
+.green2{background-color: #67cd00;}
+.green3{background-color: #228B22;}
+.hiber{background-color: #cd6700;}
+.blue3{background-color: #4682B4;}
+.hiber2{background-color: #ff8101;}
+.blue5{background-color: dodgerblue;}
+.red2{background-color: #ff1b1b;}
+.purple4{background-color: #002d5b;}
+.green4{background-color: #005b2e;}
+.post{background-color: #A67E0C;}
+
+/* ------ SEC 2 - PART 2 ------ */
+.r-part3{
+    padding: 25px;
+    background-color: rgb(194, 232, 243);
+}
+.r-part3 img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* -------- SEC 2 -------- */
+.row2{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/* -------- SEC 3 -------- */
+.comp{
+    width: 85%;
+    border-radius: 5px;
+    margin: 0 auto;
+    animation: anim 40s infinite;
+}
+.icons{
+    background-color: lightgreen;
+}
+.carousel{
+    margin-top: 30px;
+}
+.carousel-inner{
+    height: 100px;
+}
+.carousel-caption{
+    color: #fff;
+    top: 50%;
+}
+.carousel-caption h3{
+    font-size: 20px;
+}
+.carousel-caption p{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+@keyframes anim{
+    0%{background-color: dodgerblue;}
+    20%{background-color: purple;}
+    40%{background-color: #333;}
+    60%{background-color: #005b2e;}
+    80%{background-color: red;}
+    100%{background-color: dodgerblue;}
+}
+
+
+/* -------- MEDIA QUERY'S -------- */
+@media screen and (max-width: 1260px) {
+    .front-skills{
+        padding: 10px 0 0;
+    }
+    .front-skills span{
+        margin: 7px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .r-part2 h4{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .r-part2 h4{
+        font-size: 13px;
+    }
+    .skills h3{font-size: 14px;}
+    .front-skills span{
+        font-size: 10px;
+    }
+    .r-part3{
+        border-top: 1px solid rgba(0,0,0,0.2);
+        text-align: center;
+    }
+    .r-part3 img{width: 50%;}
+    .comp{width: 100%;}
+}
+@media screen and (max-width: 600px) {
+    .fdiv{padding-left: 2rem !important;}
+    .fdiv:first-child{
+        text-align: justify;
+    }
+    .row1-2{
+        padding: 15px;
+    }
+    .carousel-inner{
+        height: 115px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .r-part2{padding: 30px;}
+    .r-part3 img{width: 80%;}
+    .r-part2 h4{text-indent: 50px;}
+}
+@media screen and (max-width: 300px) {
+    .row1-2{padding: 10px 5px 0;}
+    .fdiv{padding-left: 0 !important;}
+    .front-skills{margin-left: 0 !important;}
+}

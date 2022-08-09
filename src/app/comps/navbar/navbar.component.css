@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "logo-font";
+  src: url("../../../assets/fonts/Cinzel-VariableFont_wght.ttf");
+} 
+@font-face {
+  font-family: "nav-links-font";
+  src: url("../../../assets/fonts/PublicSans-SemiBold.ttf");
+} 
+.example-spacer {flex: 1 1 auto;}
+  .navbar{
+    background-color: white;
+    padding: 35px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    overflow: hidden;
+    box-shadow: 0 0 10px lightgray;
+    transition: 0.3s;
+  }
+  .header_change{padding:20px;box-shadow: 0 0 10px gray;}
+  .nav{padding-left: 50px;}
+  .logo-text{
+    font-family: logo-font;
+    font-weight: 550;
+    font-size: 21px;
+    margin-left: 2px;
+  }
+  .nav-link{
+    font-family: nav-links-font;
+    color: black !important;
+    font-size: 15px;
+    margin-right: 10px;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: 0.8s;
+  }
+  .nav-link:hover, .active{
+    border-bottom: 2px solid #fdee00;
+  }
+  .l-space{letter-spacing: 1px;color: red;}
+  .logo-text{
+    color: black;
+    font-weight: 600;
+    border-bottom: 1px solid red;
+  }
+  .fl{
+    margin-left: 4px;
+    color: #F9A825;
+    font-weight: 550;
+  }
+  .fk{margin-left: 4px;}
+  a.last-badge{
+    background-color: #fdee00;
+    border-radius: 18px;
+    border: 2px solid #fdee00;
+  }
+  a.last-badge:hover, .activeLast{
+    background-color: white !important;
+  }
+
+  /* --------- MEDIA QUERY'S --------- */
+  @media screen and (max-width: 991px){
+    .nav-link{
+      text-align: center;
+      margin-right: 0;
+    }
+    .fk{
+      color: #F9A825;
+      font-weight: 550;
+    }
+    .nav-link:hover, .active{
+      color: purple !important;
+      border-bottom: 2px solid transparent !important;
+    }
+    .flink{
+      padding-right: 15px;
+      border-top: 1px solid #3fff00;
+      margin-top: 25px;
+      padding-top: 20px;
+    }
+    .slink{padding-left: 20px;}
+    a.last-badge{
+      padding-right: 1px;
+      padding-bottom: 25px;
+      background-color: white;
+      border-radius: 0;
+      border: 2px solid transparent;
+      border-bottom: 1px solid #3fff00;
+    }
+    a.last-badge:focus,
+    a.last-badge:hover{
+      border-bottom: 1px solid #3fff00;
+    }
+    .navbar-nav{padding: 0 !important;}
+  }
+
+  @media screen and (max-width: 400px){
+    .nav{padding-left: 10px;}
+    .nav-link{margin-right: 0;}
+    .navbar-nav{padding: 0 !important;}
+  }

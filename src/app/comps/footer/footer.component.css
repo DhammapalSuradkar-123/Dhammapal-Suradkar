@@ -1,0 +1,25 @@
+.footer{
+    background-color: #333;
+    color: white;
+}
+.footer p{
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+
+/* ------- Media Querys ------ */
+@media screen and (max-width: 565px) {
+    .footer p span{
+        display: inline-block;
+        padding: 10px 0;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 363px) {
+    .footer p span{
+        padding: 5px 0;
+        font-size: 12px;
+    }
+}

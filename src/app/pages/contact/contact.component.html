@@ -1,0 +1,68 @@
+<div class="container-fluid tabs">
+    <div class="row">
+        <div class="col-md-12 sec1">
+            <h3 class="tab1 active" (click)="stayActive('tab1')">Contact Info</h3>
+            <h3 class="tab2" (click)="stayActive('tab2')">Message Us</h3>
+        </div>
+    </div>
+</div>
+<div class="container mb-4">
+    <div class="row part2">
+        <!-- PHASE 1 -->
+        <div class="col-md-10 text-center sec sec2">
+            <h2 class="mb-4"><span>Contact Info</span></h2>
+            <hr>
+            <div class="contact-info">
+                <div class="c1 d-flex py-3">
+                    <div class="card w-50">
+                        <div class="card-body">
+                            <h1 class="card-title head1"><i class="fa-solid fa-location-dot"></i></h1>
+                            <p class="card-text p1">Buldhana, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="card w-50">
+                        <div class="card-body">
+                            <h1 class="card-title head2"><i class="fa-solid fa-envelope"></i></h1>
+                            <p class="card-text p2">dsuradkar111@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="card w-50">
+                        <div class="card-body">
+                            <h1 class="card-title head3"><i class="fa-solid fa-square-phone-flip"></i></h1>
+                            <p class="card-text p3">+91 9657531971</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="media d-flex p-3">
+                    <div class="i1 w-20"><a href="https://www.instagram.com/_dhamma_1999_/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></div>
+                    <div class="i2 w-20"><a href="https://www.linkedin.com/in/dhammapalsuradkar/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="i3 w-20"><a href="https://github.com/DhammapalSuradkar-123" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></div>
+                    <div class="i4 w-20"><a href="https://www.youtube.com/channel/UCbr-6PStZ4h8rTduAYlJJqg"
+                            target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+                    <div class="i5 w-20"><a href="https://twitter.com/Dhammapal__S" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- PHASE 2 -->
+        <div class="col-md-9 text-center sec sec3">
+            <h2 class="mb-4"><span>Message Us</span></h2>
+            <form (ngSubmit)="messageSubmit()" class="my-1">
+                <div class="form-group">
+                    <input type="text" name="name" [(ngModel)]="data.name" class="form-control"
+                        placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" name="message" [(ngModel)]="data.message" class="form-control" cols="30"
+                        rows="10" placeholder="Enter Your Message Here..."></textarea>
+                </div>
+                <button mat-raised-button color="primary" type="submit">Send <i
+                        class="fa-solid fa-arrow-right-long"></i></button>
+            </form>
+        </div>
+    </div>
+</div>

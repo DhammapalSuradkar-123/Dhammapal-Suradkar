@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- PHASE 1 -->
+        <div class="col-md-12" id="check">
+            <div class="part1 w-50">
+                <h2><span class="name">Dhammapal Suradkar</span> can access this section only.</h2>
+                <p><span (click)="showPart2()" id="code">I have Access Code</span></p>
+            </div>
+            <div class="part2">
+                <form (ngSubmit)="checkCode()">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-id-badge"></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Enter Access Code" name="AccessCode"
+                            [(ngModel)]="AccessCode">
+                    </div>
+                    <div class="save">
+                        <button mat-raised-button color="primary" type="submit">Access <i
+                                class="fa-solid fa-check"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- PHASE 2 -->
+        <div class="col-md-12" id="gallery">
+            <div class="eight">
+                <h1>My Photo Gallery</h1>
+            </div>
+            <div class="row">
+                <!-- MY IMAGES -->
+                <div class="col-sm-4 mb-4 mb-lg-0 img-box" *ngFor="let myImg of myImgs">
+                    <img *ngFor="let item of myImg" src="../../../assets/my-img/{{item}}"
+                        class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" (click)="showPic($event)" />
+                </div>
+            </div><hr><hr>
+            <div class="eight mt-5">
+                <h1>My Family Photo Gallery</h1>
+            </div>
+            <div class="row">
+                <!-- MY FAMILY IMAGES -->
+                <div class="col-sm-4 mb-4 mb-lg-0 img-box" *ngFor="let faImg of faImgs">
+                    <img *ngFor="let item of faImg" src="../../../assets/family-img/{{item}}"
+                        class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" (click)="showPic($event)" />
+                </div>
+
+            </div>
+        </div>
+        <!-- PHASE 3 -->
+        <div class="col-md-12 pic">
+            <img class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" id="pic-set" />
+            <div class="back-btn py-3">
+                <button mat-raised-button color="warn" (click)="hidePic()"><i class="fa-solid fa-arrow-left-long"></i>
+                    Back To The Gallery</button>
+            </div>
+        </div>
+    </div>
+</div>

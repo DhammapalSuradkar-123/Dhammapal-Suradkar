@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light" [class.header_change]="header_var">
+    <div class="nav">
+        <a class="navbar-brand ml-2" routerLink=""><span class="ml-2 l-space"><i class="fa-brands fa-dochub"></i><span class="logo-text">hamma</span></span></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pr-4">
+            <li class="nav-item">
+                <a class="nav-link flink" routerLink=""  [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}" ><i class="fa-solid fa-house-user"></i> <span class="fl">H</span>ome</a>
+            </li>
+            <li class="nav-item slink">
+                <a class="nav-link" routerLink="profession"  [routerLinkActive]="'active'"><i class="fa-solid fa-briefcase"></i> <span class="fl">P</span>rofession</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="contact"  [routerLinkActive]="'active'"><i class="fa-solid fa-id-card-clip"></i> <span class="fl">C</span>ontact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link last-badge" routerLink="gallery"  [routerLinkActive]="'activeLast'"><i class="fa-solid fa-photo-film"></i> <span class="fk">G</span>allery</a>
+            </li>
+        </ul>
+    </div>
+</nav>
