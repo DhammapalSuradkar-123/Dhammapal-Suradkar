@@ -1,4 +1,5 @@
 .row .col-md-12{
+    background-color: aqua;
     background-image: url("../../../assets/web-img/bg1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;

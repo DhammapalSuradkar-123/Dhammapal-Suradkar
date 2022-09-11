@@ -15,6 +15,19 @@ import { ToastrModule } from 'ngx-toastr';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ProfessionComponent } from './pages/profession/profession.component';
 import { MatCardModule } from '@angular/material/card';
+import { HomeCertComponent } from './comps/home-cert/home-cert.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NgxUiLoaderModule, NgxUiLoaderRouterModule, NgxUiLoaderConfig, SPINNER } from 'ngx-ui-loader';
+
+const ngxUiLoaderConfig:NgxUiLoaderConfig = {
+  fgsType: SPINNER.squareJellyBox,
+  fgsSize: 150,
+  fgsColor: "white",
+  pbColor: "white"
+  
+}
+
+const routes: Routes = []
 
 @NgModule({
   declarations: [
@@ -24,7 +37,8 @@ import { MatCardModule } from '@angular/material/card';
     HomeComponent,
     ContactComponent,
     GalleryComponent,
-    ProfessionComponent
+    ProfessionComponent,
+    HomeCertComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +55,10 @@ import { MatCardModule } from '@angular/material/card';
       timeOut: 6000,
       closeButton: true
     }),
-    MatCardModule
+    MatCardModule,
+    RouterModule.forRoot(routes, {useHash: true}),
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    NgxUiLoaderRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

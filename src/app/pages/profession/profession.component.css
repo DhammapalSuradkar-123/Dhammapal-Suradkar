@@ -19,54 +19,6 @@
     background-color: #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-
-/* ------ FIRST HEADING ------ */
-.eleven h1 {
-    font-size: 28px;
-    text-align: center;
-    line-height: 1em;
-    padding-bottom: 30px;
-    font-family: "Playfair Display", serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #111;
-    padding-top: 30px;
-}
-
-.eleven h1:before {
-    position: absolute;
-    left: 0;
-    bottom: 20px;
-    width: 60%;
-    left: 50%;
-    margin-left: -30%;
-    height: 1px;
-    content: "";
-    background-color: #777;
-    z-index: 4;
-}
-
-.eleven h1:after {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 50%;
-    margin-left: -20px;
-    bottom: 0px;
-    content: '\00a7';
-    font-size: 30px;
-    line-height: 40px;
-    color: #c50000;
-    font-weight: 400;
-    z-index: 5;
-    display: block;
-    background-color: white;
-}
-
-.e1 h1:after {
-    background-color: #f8f8f8;
-}
-
 .row1-2{padding: 20px 50px;}
 
 /* --------- SEC 1 - PART 1 ------- */
@@ -172,22 +124,14 @@
     margin: 0 auto;
     animation: anim 40s infinite;
 }
-.icons{
-    background-color: lightgreen;
-}
-.carousel{
-    margin-top: 30px;
-}
-.carousel-inner{
-    height: 100px;
-}
+.icons{background-color: lightgreen;}
+.carousel{margin-top: 30px;}
+.carousel-inner{height: 100px;}
 .carousel-caption{
     color: #fff;
     top: 50%;
 }
-.carousel-caption h3{
-    font-size: 20px;
-}
+.carousel-caption h3{font-size: 20px;}
 .carousel-caption p{
     letter-spacing: 1px;
     word-spacing: 1px;
@@ -205,26 +149,16 @@
 
 /* -------- MEDIA QUERY'S -------- */
 @media screen and (max-width: 1260px) {
-    .front-skills{
-        padding: 10px 0 0;
-    }
-    .front-skills span{
-        margin: 7px;
-    }
+    .front-skills{padding: 10px 0 0;}
+    .front-skills span{margin: 7px;}
 }
 @media screen and (max-width: 900px) {
-    .r-part2 h4{
-        font-size: 14px;
-    }
+    .r-part2 h4{font-size: 14px;}
 }
 @media screen and (max-width: 767px) {
-    .r-part2 h4{
-        font-size: 13px;
-    }
+    .r-part2 h4{font-size: 13px;}
     .skills h3{font-size: 14px;}
-    .front-skills span{
-        font-size: 10px;
-    }
+    .front-skills span{font-size: 10px;}
     .r-part3{
         border-top: 1px solid rgba(0,0,0,0.2);
         text-align: center;
@@ -234,15 +168,9 @@
 }
 @media screen and (max-width: 600px) {
     .fdiv{padding-left: 2rem !important;}
-    .fdiv:first-child{
-        text-align: justify;
-    }
-    .row1-2{
-        padding: 15px;
-    }
-    .carousel-inner{
-        height: 115px;
-    }
+    .fdiv:first-child{text-align: justify;}
+    .row1-2{padding: 15px;}
+    .carousel-inner{height: 115px;}
 }
 @media screen and (max-width: 400px) {
     .r-part2{padding: 30px;}

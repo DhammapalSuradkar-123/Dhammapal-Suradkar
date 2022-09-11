@@ -2,3 +2,51 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* -------- Section Title -------- */
+.eleven h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1em;
+    padding-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #111;
+    padding-top: 30px;
+}
+.eleven h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+    height: 1px;
+    content: "";
+    background-color: #777;
+    z-index: 4;
+}
+.eleven h1:after {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0px;
+    content: '\00a7';
+    font-size: 30px;
+    line-height: 40px;
+    color: #c50000;
+    font-weight: 400;
+    z-index: 5;
+    display: block;
+    background-color: white;
+}
+.e1 h1:after {background-color: #f8f8f8;}
+
+
+/* --------- MEDIA QUERYS -------- */
+@media screen and (max-width: 400px) {
+    .eleven h1 {font-size: 22px;}
+}

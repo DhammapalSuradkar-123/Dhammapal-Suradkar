@@ -77,6 +77,4 @@ export class GalleryComponent implements OnInit {
     ele2?.classList.remove("show-pic");
   }
 
-
-
 }

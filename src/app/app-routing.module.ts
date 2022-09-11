@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: "", component: HomeComponent, pathMatch: "full"},
   {path: "contact", component: ContactComponent, pathMatch: "full"},
   {path: "gallery", component: GalleryComponent, pathMatch: "full"},
-  {path: "profession", component: ProfessionComponent, pathMatch: "full"},
+  {path: "profession", component: ProfessionComponent, pathMatch: "full"}
 ];
 
 @NgModule({

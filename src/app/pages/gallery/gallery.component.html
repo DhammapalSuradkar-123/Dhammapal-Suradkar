@@ -30,7 +30,7 @@
             <div class="row">
                 <!-- MY IMAGES -->
                 <div class="col-sm-4 mb-4 mb-lg-0 img-box" *ngFor="let myImg of myImgs">
-                    <img *ngFor="let item of myImg" src="../../../assets/my-img/{{item}}"
+                    <img *ngFor="let item of myImg" src="./assets/my-img/{{item}}"
                         class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" (click)="showPic($event)" />
                 </div>
             </div><hr><hr>
@@ -40,10 +40,9 @@
             <div class="row">
                 <!-- MY FAMILY IMAGES -->
                 <div class="col-sm-4 mb-4 mb-lg-0 img-box" *ngFor="let faImg of faImgs">
-                    <img *ngFor="let item of faImg" src="../../../assets/family-img/{{item}}"
+                    <img *ngFor="let item of faImg" src="./assets/family-img/{{item}}"
                         class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" (click)="showPic($event)" />
                 </div>
-
             </div>
         </div>
         <!-- PHASE 3 -->
