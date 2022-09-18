@@ -16,7 +16,7 @@
 }
 
 .row1{
-    background-color: #f8f8f8;
+    background-color: #f2f3f4;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 .row1-2{padding: 20px 50px;}
@@ -94,7 +94,6 @@
 .green2{background-color: #67cd00;}
 .green3{background-color: #228B22;}
 .hiber{background-color: #cd6700;}
-.blue3{background-color: #4682B4;}
 .hiber2{background-color: #ff8101;}
 .blue5{background-color: dodgerblue;}
 .red2{background-color: #ff1b1b;}
@@ -118,6 +117,13 @@
 }
 
 /* -------- SEC 3 -------- */
+.row .resume{
+    margin: 0 auto;
+    padding: 30px 0 20px;
+}
+.row .resume img{width: 100%;}
+
+/* -------- SEC 4 -------- */
 .comp{
     width: 85%;
     border-radius: 5px;
@@ -171,11 +177,13 @@
     .fdiv:first-child{text-align: justify;}
     .row1-2{padding: 15px;}
     .carousel-inner{height: 115px;}
+    .row .resume{padding: 30px 30px 20px;}
 }
 @media screen and (max-width: 400px) {
     .r-part2{padding: 30px;}
     .r-part3 img{width: 80%;}
     .r-part2 h4{text-indent: 50px;}
+    .row .resume{padding: 30px 20px 20px;}
 }
 @media screen and (max-width: 300px) {
     .row1-2{padding: 10px 5px 0;}

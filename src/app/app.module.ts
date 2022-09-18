@@ -18,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HomeCertComponent } from './comps/home-cert/home-cert.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgxUiLoaderModule, NgxUiLoaderConfig, SPINNER } from 'ngx-ui-loader';
+import {MatDividerModule} from '@angular/material/divider';
 
 const ngxUiLoaderConfig:NgxUiLoaderConfig = {
   fgsType: SPINNER.squareJellyBox,
@@ -59,6 +60,7 @@ const routes: Routes = []
     MatCardModule,
     RouterModule.forRoot(routes, {useHash: true}),
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

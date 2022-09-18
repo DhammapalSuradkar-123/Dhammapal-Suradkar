@@ -32,7 +32,7 @@ export class GalleryComponent implements OnInit {
     this.loader.start(); 
     setTimeout(() => {
       this.loader.stop();
-    }, 2000);
+    }, 1000);
   }
 
   // show part2
