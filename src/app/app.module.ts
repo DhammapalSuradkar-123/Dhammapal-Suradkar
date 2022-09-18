@@ -17,14 +17,15 @@ import { ProfessionComponent } from './pages/profession/profession.component';
 import { MatCardModule } from '@angular/material/card';
 import { HomeCertComponent } from './comps/home-cert/home-cert.component';
 import { RouterModule, Routes } from '@angular/router';
-import { NgxUiLoaderModule, NgxUiLoaderRouterModule, NgxUiLoaderConfig, SPINNER } from 'ngx-ui-loader';
+import { NgxUiLoaderModule, NgxUiLoaderConfig, SPINNER } from 'ngx-ui-loader';
 
 const ngxUiLoaderConfig:NgxUiLoaderConfig = {
   fgsType: SPINNER.squareJellyBox,
-  fgsSize: 150,
-  fgsColor: "white",
-  pbColor: "white"
-  
+  fgsSize: 145,
+  fgsColor: "#00ff00",
+  pbColor: "#00ff00",
+  text: "Please Wait...",
+  textColor: "#00ff00"
 }
 
 const routes: Routes = []
@@ -58,7 +59,6 @@ const routes: Routes = []
     MatCardModule,
     RouterModule.forRoot(routes, {useHash: true}),
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
-    NgxUiLoaderRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

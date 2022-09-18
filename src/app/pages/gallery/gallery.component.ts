@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-gallery',
@@ -25,9 +26,13 @@ export class GalleryComponent implements OnInit {
 
   AccessCode = "";
 
-  constructor(private toastr: ToastrService) { }
+  constructor(private toastr: ToastrService, private loader: NgxUiLoaderService) { }
 
   ngOnInit(): void {
+    this.loader.start(); 
+    setTimeout(() => {
+      this.loader.stop();
+    }, 2000);
   }
 
   // show part2
